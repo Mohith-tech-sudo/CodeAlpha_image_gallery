@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vibe Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">VIBE<span>GALLERY</span></div>
+
+        <p>Explore the world through beautiful images</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search gallery..."
+            >
+        </div>
+    </header>
+
+
+    <!-- Category Buttons -->
+    <nav class="categories">
+
+        <button class="filter active" data-category="all">
+            All
+        </button>
+
+        <button class="filter" data-category="nature">
+            Nature
+        </button>
+
+        <button class="filter" data-category="travel">
+            Travel
+        </button>
+
+        <button class="filter" data-category="animals">
+            Animals
+        </button>
+
+        <button class="filter" data-category="architecture">
+            Architecture
+        </button>
+
+    </nav>
+
+
+    <!-- Image Gallery -->
+    <main class="gallery">
+
+        <div class="card" data-category="nature" data-title="Mountain Escape">
+            <img src="https://picsum.photos/id/1015/800/600">
+            <div class="overlay">
+                <h2>Mountain Escape</h2>
+                <p>Nature</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="travel" data-title="Ocean Journey">
+            <img src="https://picsum.photos/id/1016/800/600">
+            <div class="overlay">
+                <h2>Ocean Journey</h2>
+                <p>Travel</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="animals" data-title="Wild Beauty">
+            <img src="https://picsum.photos/id/1025/800/600">
+            <div class="overlay">
+                <h2>Wild Beauty</h2>
+                <p>Animals</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="architecture" data-title="Modern City">
+            <img src="https://picsum.photos/id/1031/800/600">
+            <div class="overlay">
+                <h2>Modern City</h2>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="nature" data-title="Green Forest">
+            <img src="https://picsum.photos/id/1040/800/600">
+            <div class="overlay">
+                <h2>Green Forest</h2>
+                <p>Nature</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="travel" data-title="Desert Adventure">
+            <img src="https://picsum.photos/id/1002/800/600">
+            <div class="overlay">
+                <h2>Desert Adventure</h2>
+                <p>Travel</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="animals" data-title="Cute Friend">
+            <img src="https://picsum.photos/id/237/800/600">
+            <div class="overlay">
+                <h2>Cute Friend</h2>
+                <p>Animals</p>
+            </div>
+        </div>
+
+
+        <div class="card" data-category="architecture" data-title="City Lights">
+            <img src="https://picsum.photos/id/106/800/600">
+            <div class="overlay">
+                <h2>City Lights</h2>
+                <p>Architecture</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="navigation prev">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxCategory"></p>
+
+        </div>
+
+        <button class="navigation next">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
